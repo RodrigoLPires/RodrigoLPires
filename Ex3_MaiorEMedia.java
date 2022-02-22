@@ -1,7 +1,5 @@
 package ExercíciosLoops;
 
-import InterfaceGráfica.Cadastros;
-
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
