@@ -1,5 +1,7 @@
 package ExercíciosLoops;
 
+import InterfaceGráfica.Cadastros;
+
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -24,8 +26,7 @@ public class Ex3_MaiorEMedia {
         float media;
         DecimalFormat dec2 = new DecimalFormat("#0.00");
         int count = 0;
-        int max = argumentos;
-        int [] todos = new int[max];
+        int [] todos = new int[argumentos];
 
         do {
             System.out.println("Digite o " + (count + 1) + "º" + " número: ");
@@ -41,7 +42,7 @@ public class Ex3_MaiorEMedia {
 
             media = soma / count;
 
-        } while (count < max);{
+        } while (count < argumentos);{
 
             System.out.println("Os " + count + " números digitados foram: " + Arrays.toString(todos));
             System.out.println("O maior número digitado foi " + maior + "!");
