@@ -1,0 +1,21 @@
+<html>
+    <script>
+        var novaLista = [1, 25, 36, 28, 69, 71, 99, 60]
+
+        function procuraNumero (numero, lista) {
+            var i = 0
+            var cont = 0
+            while (i < lista.length) {
+                if (lista[i] === numero) {
+                    console.log('Valor encontrado!');
+                    cont++
+                    break;
+                }
+            i++
+            }
+            if (cont === 0) {
+                console.log('Valor não encontrado!')
+            }
+        }
+    </script>
+</html>

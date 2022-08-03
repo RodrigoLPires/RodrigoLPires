@@ -1,0 +1,22 @@
+<html>
+    <script>
+    function numeroPrimo() {
+        var lista = [2,3,4,5,6,7,8,9,10,11,12,13,14]
+        var soma = 0
+        for (cont = 0; cont < lista.length; cont++) {
+            numero = lista[cont]
+            var resultado = false;
+            for( var i = 2; i < numero; i++) {
+                var resto = (numero % i);
+                if (resto === 0 ){
+                    resultado = true
+                }
+            }
+                if (resultado === false && numero > 1) {
+                    console.log('O número ' + numero + ' é primo!')
+                    soma = soma + numero
+                } else console.log('O número ' + numero + ' não é primo!')
+        } console.log(soma)
+    }
+    </script>
+</html>

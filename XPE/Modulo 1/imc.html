@@ -1,0 +1,26 @@
+<html>
+    <script>
+        var peso;
+        var altura;
+
+        function imc(peso, altura) {
+            resultado = peso / (altura**2)
+        
+        if (resultado < 18.5){
+            console.log('Abaixo do Peso!');
+        } else if(resultado >= 18.5 && resultado <= 24.9) {
+            console.log('Peso Normal')
+        } else if(resultado >= 25 && resultado <= 29.9){
+            console.log('Sobrepeso')
+        } else if(resultado >= 30 && resultado <= 34.9) {
+            console.log('Obesidade Grau I')
+        } else if(resultado >= 35 && resultado <= 39.9) {
+            console.log('Obesidade Grau II')
+        } else console.log('Obedidade Mórbida')
+        
+        return resultado
+
+        }
+
+    </script>
+</html>

@@ -1,0 +1,63 @@
+body {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 248, 248);
+}
+
+header {
+    background-color:beige;
+    border-style: double;
+    border-radius: 2.5ch;
+    color: black;
+    text-shadow: crimson;
+    width:unset;
+    text-align: center;
+}
+
+img {
+    border-radius: 1ch;
+    display: block;
+}
+
+h1, li {
+    border: 10ex;
+    margin: 2mm;
+}
+
+.NomeCompleto:hover{
+    color: rgba(131, 34, 34, 0.603);
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    color: black;
+}
+
+.Titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    background-color: rgb(7, 8, 88);
+    border-style:groove ;
+    color: white;
+    /*margin: auto;*/
+}
+
+tbody tr:nth-child(odd) {
+    background-color:rgb(21, 24, 194);
+    color: azure;
+}
+
+tbody tr:hover {
+    font-weight: bold;
+    /*user-select: none;*/
+    cursor: default;
+}
+
+th, td {
+    padding: 1mm;
+}
