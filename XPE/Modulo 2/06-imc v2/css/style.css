@@ -1,0 +1,20 @@
+body {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+
+}
+
+label {
+    font-family: "JetBrains mono";
+}
+
+input {
+    font-size:small ;
+    inline-size: 25mm;
+    display:grid ;
+}
+
+p {
+    font-size: small;
+}
