@@ -60,31 +60,22 @@ function faixaImc(imc) {
 
     if (imc < imcMinimoFaixa1) {
         resultFaixa.textContent = 'Valor inválido.'
-    }
-    if (imc >= imcMinimoFaixa1 && imc <= imcMaximoFaixa2) {
+    } else if (imc >= imcMinimoFaixa1 && imc <= imcMaximoFaixa2) {
         resultFaixa.textContent = 'Muito abaixo do peso.'
-    }
-    if (imc > imcMaximoFaixa2 && imc <= imcMaximoFaixa3) {
+    } else if (imc > imcMaximoFaixa2 && imc <= imcMaximoFaixa3) {
         resultFaixa.textContent = 'Abaixo do peso.'
-    } 
-    if (imc > imcMaximoFaixa3 && imc <= imcMaximoFaixa4) {
+    } else if (imc > imcMaximoFaixa3 && imc <= imcMaximoFaixa4) {
         resultFaixa.textContent = 'Peso normal.'
-    } 
-    if (imc > imcMaximoFaixa4 && imc <= imcMaximoFaixa5) {
+    } else if (imc > imcMaximoFaixa4 && imc <= imcMaximoFaixa5) {
         resultFaixa.textContent = 'Acima do peso.'
-    }
-    if (imc > imcMaximoFaixa5 && imc <= imcMaximoFaixa6) {
+    } else if (imc > imcMaximoFaixa5 && imc <= imcMaximoFaixa6) {
         resultFaixa.textContent = 'Obesidade grau I.'
-    }
-    if (imc > imcMaximoFaixa6 && imc <= imcMaximoFaixa7) {
+    } else if (imc > imcMaximoFaixa6 && imc <= imcMaximoFaixa7) {
         resultFaixa.textContent = 'Obesidade grau II.'
-    }
-    if (imc > imcMaximoFaixa7) {
+    } else if (imc > imcMaximoFaixa7 && imc <= imcMaximoFaixa8) {
         resultFaixa.textContent = 'Obesidade grau III ou mórbida.'
-    }
-    if (imc > imcMaximoFaixa8) {
+    } else if (imc > imcMaximoFaixa8)
         resultFaixa.textContent = 'Obesidade mórbida II.'
-    }
 } 
 
 function pesoMinimo() {
@@ -121,7 +112,7 @@ function exibirAltura() {
 
     var alturaExibir = agoraExibirAltura;
 
-    alturaExibir.textContent = Number(inputAltura.value)
+    alturaExibir.textContent = Number(inputAltura.value).toFixed(2)
     
 }
 
